@@ -34,7 +34,12 @@ array = []
 for _ in range(n):
     array.append(int(input())) #리스트 array 생성
 
+
+#1
 array = merge_sort(array) #병합 정렬 수행
+#2
+array = sorted(array)
+
 
 for data in array: #정렬된 배열 출력
     print(data)
