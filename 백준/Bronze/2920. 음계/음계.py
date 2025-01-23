@@ -1,17 +1,17 @@
-a = list(map(int, input().split(' ') )) #map : 각각 원소를 int형으로 바꿈
+a = list(map(int,input().split(' ')))
 
 ascending = True
 descending = True
 
-for i in range(1,8):
-    if a[i] > a[i-1]:
+for i in range(1,8): 
+    if a[i] > a[i-1]: #a1>a0 오름차순
         descending = False
-    elif a[i] < a[i-1]:
+    elif a[i] < a[i-1]: #a1<a0 내림차순
         ascending = False
         
-if ascending:
-    print('ascending')
-elif descending:
-    print('descending')
+if ascending == True:
+    print("ascending")
+elif descending == True:
+    print("descending")
 else:
-    print('mixed')
+    print("mixed")
