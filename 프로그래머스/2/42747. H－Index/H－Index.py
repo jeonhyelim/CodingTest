@@ -6,4 +6,4 @@ def solution(citations):
         if i >= citations[i]:
             return i
 
-    return n
+    return n #모든 논문이 조건을 만족x
