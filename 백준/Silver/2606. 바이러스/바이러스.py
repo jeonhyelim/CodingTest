@@ -8,7 +8,7 @@ M = int(sys.stdin.readline())          # 네트워크(간선) 개수
 # 네트워크(그래프) 연결 정보 저장 (1번 ~ N번 컴퓨터, 인덱스 0은 사용 X)
 net = [[] for _ in range(N + 1)]
 
-# 네트워크 연결 정보 입력받기 (양방향이므로 양쪽 모두 추가)
+# 네트워크 연결 정보 입력받기 (무방향이므로 양쪽 모두 추가)
 for _ in range(M):
     a, b = map(int, sys.stdin.readline().split())
     net[a].append(b)
