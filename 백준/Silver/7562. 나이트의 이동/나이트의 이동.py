@@ -44,5 +44,6 @@ for _ in range(T):
             if 0 <= nx < l and 0 <= ny < l and not visited[nx][ny]:
                 visited[nx][ny] = True        # 방문 처리
                 q.append((nx, ny, cnt + 1))  # 이동 횟수 +1 하여 큐에 저장
+            # 이 과정을 큐가 빌 때까지 반복하면, 나이트가 최소 몇 번만에 목표 칸까지 갈 수 있는지 구할 수 있음
     
     print(answer)  # 최소 이동 횟수 출력
